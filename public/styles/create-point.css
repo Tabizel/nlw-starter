@@ -1,0 +1,148 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#page-create-point header{
+    display: flex;
+    margin-top: 48px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-create-point a{
+    display: flex;
+    color: var(--title-color);
+    font-weight: 700;
+    align-items: center;
+}
+
+#page-create-point header a span{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    background-image: url('../images/arrow-left.svg');
+    margin-right: 12px;
+}
+
+form{
+    max-width: 730px;
+    margin: 80px auto;
+    padding: 64px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+form h1{
+    font-size: 36px;
+}
+
+form fieldset{
+    margin-top: 64px;
+}
+
+form legend{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+form legend h2{
+    font-size: 24px;
+}
+
+form legend span{
+    font-size: 14px;
+    color: var(--title-color);
+}
+
+form .field{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+form .field-group{
+    display: flex;
+}
+
+form input, form select{
+    font-size: 16px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    background-color: #F0F0F5;
+}
+
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field +.field{
+    margin-left: 24px;
+}
+
+form button{
+    width: 260px;
+    height: 56px;
+    margin-top: 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-color);
+    transition: background-color 400ms;
+}
+
+form button:hover{
+    background-color: #2FB86E;
+}
+
+.items-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.items-grid li{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    padding: 32px 24px 16px;
+    list-style-type: none;
+    background-color: #F5F5F5;
+    border: 2px solid #F5F5F5;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+}
+
+.items-grid li span{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    color: var(--title-color);
+}
+
+.items-grid li.selected{
+    background-color: #E1FAEC;
+    border: 2px solid #34CB79;
+}
+
+.items-grid li img, .items-grid li span{
+    pointer-events: none;
+}
+

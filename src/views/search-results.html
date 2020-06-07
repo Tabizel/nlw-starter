@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+    {% block title %}
+        <title>Ecoleta - Busca</title>
+    {% endblock title %}
+
+    {% block styles %}
+        <link href="styles/search-results.css" type="text/css" rel="stylesheet" />
+    {% endblock styles %}
+
+    {% set pageId = "page-search-results" %}
+
+        {% block content %}
+            {% include "partials/page-header.html" %}
+            
+            <main>
+
+            {% if total > 0 %}           
+                <h4>
+                    <strong>{{total}} pontos</strong> encontrados
+                </h4>       
+
+                <div class="cards">
+
+                    {% for place in places %}   
+                    <div class="card">
+                        <img src="{{place.image}}" alt="{{place.nome}}" />
+                        <h1>{{place.nome}}</h1>
+                        <h3>{{place.items}}</h3>
+                        <p>
+                            {{place.city}}, {{place.state}} <br/>
+                            {{place.address}} <br/>
+                            {{place.address2}}
+                        </p>
+                    </div><!--card-->
+
+                    {% endfor %}
+
+                </div><!--cards-->
+            {%else%}
+                <h4>
+                    <strong>Nenhum</strong> ponto encontrado
+                </h4>       
+            {% endif %}
+
+            </main>
+        {% endblock content %}

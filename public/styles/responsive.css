@@ -1,0 +1,91 @@
+@media screen and (max-width: 1024px){
+
+    #page-home{
+        background-position-x: 40vw;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    #page-home{
+        background-image: none;
+    }
+
+    #page-home .container{
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header{
+        flex-direction: column;
+    }
+
+    #page-home header a{
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    #page-home main{
+        align-items: center;
+    }
+
+    main .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    main .card img{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 640px){
+
+    main .cards{
+        grid-template-columns: 1fr;
+    }
+
+    main .card img{
+        width: 100%;
+        height: 230px;
+    }
+
+    form h1{
+        text-align: center;
+    }
+
+    #page-create-point .field-group{
+        flex-direction: column;
+    }
+
+    form .field-group .field +.field{
+        margin-left: 0;
+    }
+
+    form legend{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    form legend{
+        flex-direction: column;
+    }
+
+    form legend h2{
+        text-align: center;
+    }
+    
+    form legend span{
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .items-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+}
