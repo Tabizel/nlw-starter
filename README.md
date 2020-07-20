@@ -20,7 +20,7 @@ Layout base file is not available.
 
 After you have installed all pre-reqs, you just have to run the npm in your terminal with:
 
-npm install
+npm build
 npm start
 
 Now the project will be running in http://localhost:3000
